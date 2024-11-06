@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wordle</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Wordle Game</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <h1>Wordle Game</h1>
+  <p>Guess the 5-letter word! You have 6 tries.</p>
+  <input type="text" id="guessInput" maxlength="5" placeholder="Enter a 5-letter word">
+  <button onclick="makeGuess()">Guess</button>
+  <div id="feedback"></div>
+  <script src="wordle.js"></script>
 </body>
 </html>
